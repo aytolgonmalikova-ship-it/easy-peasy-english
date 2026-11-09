@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "home": "Home",
+    "about": "About us",
+    "services": "Courses",
+    "contacts": "Contacts",
+    "notFound": "Page not found"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Courses",
+    "contacts": "Contacts",
+    "enroll": "Enroll",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "logoSub": "English for kids"
+  },
+  "hero": {
+    "badge": "English for kids aged 4–12",
+    "title1": "Speak",
+    "highlight": "English",
+    "title2": "easy peasy!",
+    "subtitle": "Playful lessons where kids quickly learn to speak correctly — and grammar finally makes sense.",
+    "cta": "Book a free lesson",
+    "secondary": "See courses",
+    "bubble": "Hello, friend!",
+    "kidsLabel": "happy students",
+    "perks": ["Learning through games", "Groups of 6–8 kids", "First lesson is free"]
+  },
+  "about": {
+    "tag": "About us",
+    "title": "Why kids love us",
+    "value": "We'll teach your child to speak English quickly and correctly — and understand grammar with ease!",
+    "text": "Easy Peasy English is a cozy school in Bishkek where English feels like an adventure. Songs, games, stories and real conversations instead of boring cramming.",
+    "more": "More about us",
+    "features": [
+      { "title": "Learning by playing", "text": "Every lesson is a game, so new words stick naturally." },
+      { "title": "Speaking from day one", "text": "Kids talk 70% of the lesson — no shy silence." },
+      { "title": "Grammar made simple", "text": "Rules turn into pictures, puzzles and funny stories." },
+      { "title": "Visible progress", "text": "Parents get monthly reports and see real results." }
+    ]
+  },
+  "aboutPage": {
+    "title": "About Easy Peasy English",
+    "subtitle": "A school where English is easy, fun and a little bit magical.",
+    "missionTitle": "Our mission",
+    "missionText1": "We believe every child can speak English confidently. Our teachers turn lessons into adventures: we sing, play, act out stories and talk a lot.",
+    "missionText2": "Small groups and a friendly atmosphere help even the shyest kids open up and start speaking.",
+    "stats": [
+      { "value": "8", "label": "years of experience" },
+      { "value": "500+", "label": "happy students" },
+      { "value": "6–8", "label": "kids per group" },
+      { "value": "98%", "label": "parents recommend us" }
+    ],
+    "stepsTitle": "How our lessons work",
+    "steps": [
+      { "title": "Warm-up", "text": "A song or a game to switch into English mode." },
+      { "title": "New words", "text": "Flashcards, gestures and funny pictures." },
+      { "title": "Grammar game", "text": "One rule explained through a puzzle or a story." },
+      { "title": "Speaking time", "text": "Dialogues, role plays and mini-projects." }
+    ],
+    "teamTitle": "Meet our teachers",
+    "teamSubtitle": "Kind, energetic and certified — kids adore them.",
+    "experience": "Experience: {{count}} years"
+  },
+  "team": {
+    "aigerim": {
+      "name": "Aigerim",
+      "role": "Head teacher, CELTA",
+      "bio": "Turns any grammar rule into a game in five minutes."
+    },
+    "daniel": {
+      "name": "Daniel",
+      "role": "Speaking Club host",
+      "bio": "A native speaker from the UK who loves riddles and drama games."
+    },
+    "elena": {
+      "name": "Elena",
+      "role": "Teacher for kids 4–6",
+      "bio": "Makes the very first English words sound like a song."
+    }
+  },
+  "courses": {
+    "tag": "Courses",
+    "title": "Pick your adventure",
+    "subtitle": "Programs for every age and every goal.",
+    "viewAll": "All courses",
+    "currency": "som",
+    "perMonth": "per month",
+    "age": "{{age}} y.o.",
+    "lessons": "{{count}}× a week",
+    "duration": "{{count}} min",
+    "popular": "Popular!",
+    "enroll": "Enroll",
+    "prefill": "Hello! I'd like to enroll my child in the «{{course}}» course.",
+    "items": {
+      "starter": {
+        "title": "Starter for Kids",
+        "desc": "The very first steps into English: sounds, colors, animals and lots of songs.",
+        "features": ["Phonics & first words", "Songs and cartoons", "Fine motor skill games"]
+      },
+      "grammar": {
+        "title": "Fun Grammar",
+        "desc": "Grammar through comics, puzzles and board games — rules finally make sense.",
+        "features": ["Tenses with pictures", "Board games & quests", "Homework without tears"]
+      },
+      "speaking": {
+        "title": "Speaking Club",
+        "desc": "Live conversations, role plays and mini-projects to beat the language barrier.",
+        "features": ["70% speaking time", "Sessions with a native speaker", "Drama & presentations"]
+      },
+      "readers": {
+        "title": "Little Readers",
+        "desc": "Reading made fun: from first letters to little story books.",
+        "features": ["Phonics-based reading", "Picture book club", "Vocabulary boost"]
+      }
+    }
+  },
+  "servicesPage": {
+    "title": "Our courses",
+    "subtitle": "Choose a program — we'll check the level at a free trial lesson.",
+    "trialTitle": "Not sure which course fits?",
+    "trialText": "Come to a free trial lesson: we'll check your child's level and recommend the perfect group.",
+    "trialCta": "Book a trial lesson"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Have a question or want to enroll? Write to us — we reply within an hour!",
+    "infoTitle": "How to reach us",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "123 Chui Avenue, Bishkek",
+    "hours": "Working hours",
+    "hoursValue": "Mon–Sat, 9:00–19:00",
+    "whatsappTitle": "Write to us on WhatsApp",
+    "whatsappText": "The fastest way to get an answer",
+    "whatsappCta": "Open WhatsApp",
+    "followUs": "Follow us",
+    "form": {
+      "title": "Send us a message",
+      "name": "Your name",
+      "namePh": "e.g. Aida",
+      "email": "Email",
+      "emailPh": "you@example.com",
+      "phone": "Phone",
+      "phonePh": "+996 504 889 991",
+      "message": "Message",
+      "messagePh": "Tell us about your child: age, level, goals…",
+      "required": "required field",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "fixErrors": "Please fix the highlighted fields",
+      "successTitle": "Yay! Message sent!",
+      "successText": "Thank you! Our manager will contact you very soon.",
+      "again": "Send another message"
+    },
+    "errors": {
+      "required": "This field is required",
+      "nameShort": "Name must be at least 2 letters",
+      "nameInvalid": "Please use letters only",
+      "email": "Enter a valid email, e.g. name@mail.com",
+      "phone": "Enter a valid phone, e.g. +996 504 889 991",
+      "messageShort": "Message must be at least 10 characters"
+    }
+  },
+  "status": {
+    "loading": "Loading…",
+    "errorTitle": "Oops! Something went wrong",
+    "serverError": "Our server is taking a nap. Please try again in a moment.",
+    "networkError": "No internet connection. Check your network and try again.",
+    "unknown": "An unexpected error occurred.",
+    "retry": "Try again",
+    "sendFailed": "We couldn't send your message."
+  },
+  "cta": {
+    "title": "Ready for the first lesson?",
+    "text": "The trial lesson is free — your child will love it!",
+    "button": "Enroll now",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "footer": {
+    "tagline": "English for kids that feels like play.",
+    "quickLinks": "Quick links",
+    "contacts": "Contacts",
+    "follow": "We're on social media",
+    "rights": "All rights reserved.",
+    "made": "Made with love for little learners"
+  },
+  "notFound": {
+    "title": "Oops, this page got lost!",
+    "text": "Even our little pea can't find it. Let's go back home.",
+    "back": "Back to home"
+  },
+  "whatsappFloat": "Chat with us on WhatsApp"
+}

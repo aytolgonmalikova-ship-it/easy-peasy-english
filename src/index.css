@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+/* `dark:` variant is driven by the .dark class on <html> (set by ThemeToggle / index.html) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Nunito", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Theme-aware tokens: redefined under .dark below */
+  --color-ink: #2b2d42; /* main text, outlines, sticker shadows */
+  --color-cream: #fff9ec; /* page background */
+  --color-surface: #ffffff; /* cards, inputs, chips */
+  /* Fixed dark ink for text on bright fills (sun/sky/mint/grape) — same in both themes */
+  --color-coal: #2b2d42;
+  --color-sun: #ffe27a;
+  --color-sun-soft: #fff4c7;
+  --color-sky: #7cc8ff;
+  --color-sky-soft: #e1f3ff;
+  --color-mint: #8ee3b4;
+  --color-mint-soft: #e2f8ec;
+  --color-coral: #ff7f6b;
+  --color-coral-soft: #ffe4de;
+  --color-grape: #b9a2ff;
+  --color-grape-soft: #efe9ff;
+  --color-berry: #c93a24;
+  --color-wa: #25d366;
+
+  --shadow-sticker-sm: 3px 3px 0 0 var(--color-ink);
+  --shadow-sticker: 5px 5px 0 0 var(--color-ink);
+  --shadow-sticker-lg: 8px 8px 0 0 var(--color-ink);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-wiggle: wiggle 0.6s ease-in-out;
+  --animate-blob: blob 14s ease-in-out infinite;
+  --animate-pop: pop 0.45s cubic-bezier(0.2, 1.4, 0.4, 1) both;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+  }
+  @keyframes blob {
+    0%, 100% { border-radius: 42% 58% 63% 37% / 45% 40% 60% 55%; }
+    33% { border-radius: 60% 40% 35% 65% / 55% 60% 40% 45%; }
+    66% { border-radius: 38% 62% 55% 45% / 62% 38% 62% 38%; }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: scale(0.92) translateY(8px); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@layer base {
+  /* Dark palette — every utility that uses these tokens switches automatically */
+  .dark {
+    --color-ink: #f4eddc;
+    --color-cream: #1a1c2c;
+    --color-surface: #262941;
+    --color-sun-soft: #3b3423;
+    --color-sky-soft: #1c2f45;
+    --color-mint-soft: #1b3a2e;
+    --color-coral-soft: #44282b;
+    --color-grape-soft: #2c2748;
+    --color-berry: #ff9a85;
+    color-scheme: dark;
+  }
+
+  /* Bright fills keep dark text in both themes for contrast */
+  :is(.bg-sun, .bg-sky, .bg-mint, .bg-grape) {
+    color: var(--color-coal);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-cream font-sans text-ink antialiased;
+    min-width: 320px;
+  }
+  ::selection {
+    background: var(--color-sun);
+    color: var(--color-coal);
+  }
+  :focus-visible {
+    outline: 3px dashed var(--color-coral);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border-3 border-ink bg-surface px-6 py-3 text-base font-extrabold text-ink shadow-sticker transition-all duration-150 select-none hover:-translate-y-0.5 hover:shadow-sticker-lg active:translate-x-1 active:translate-y-1 active:shadow-none disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0 disabled:hover:shadow-sticker;
+  }
+  .btn-sm {
+    @apply px-4 py-2 text-sm shadow-sticker-sm hover:shadow-sticker;
+  }
+  .btn-coral { @apply bg-coral text-white; }
+  .btn-sun { @apply bg-sun text-coal; }
+  .btn-sky { @apply bg-sky text-coal; }
+  .btn-wa { @apply bg-wa text-white; }
+
+  .card-sticker {
+    @apply rounded-[2rem] border-3 border-ink bg-surface shadow-sticker;
+  }
+
+  .input {
+    @apply w-full rounded-2xl border-3 border-ink/70 bg-surface px-4 py-3 text-base font-semibold text-ink transition outline-none placeholder:text-ink/35 focus:border-sky focus:shadow-[0_0_0_4px_rgb(124_200_255/0.35)];
+  }
+  .input-error {
+    @apply border-berry bg-coral-soft/50 focus:border-berry focus:shadow-[0_0_0_4px_rgb(255_127_107/0.3)];
+  }
+
+  /* Footer stays a dark block in both themes */
+  .footer-palette {
+    --color-ink: #2b2d42;
+    --color-cream: #fff9ec;
+  }
+  .dark .footer-palette {
+    --color-ink: #11121d;
+  }
+
+  .dots-bg {
+    background-image: radial-gradient(color-mix(in srgb, var(--color-ink) 9%, transparent) 2px, transparent 2px);
+    background-size: 22px 22px;
+  }
+}
+
+/* Added for ~0.45s while switching theme (see src/theme.js) so colours fade smoothly */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow, text-shadow !important;
+  transition-duration: 0.4s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- "Peasy" the pea — Easy Peasy English mascot -->
+  <ellipse cx="150" cy="284" rx="78" ry="10" fill="#2B2D42" opacity="0.12"/>
+
+  <!-- waving arm -->
+  <path d="M62 170 Q30 150 34 108" fill="none" stroke="#2B2D42" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="34" cy="102" r="14" fill="#7ED957" stroke="#2B2D42" stroke-width="5"/>
+  <!-- arm holding a book -->
+  <path d="M238 172 Q262 190 256 214" fill="none" stroke="#2B2D42" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- feet -->
+  <ellipse cx="116" cy="266" rx="24" ry="13" fill="#4CB944" stroke="#2B2D42" stroke-width="5"/>
+  <ellipse cx="184" cy="266" rx="24" ry="13" fill="#4CB944" stroke="#2B2D42" stroke-width="5"/>
+
+  <!-- body -->
+  <circle cx="150" cy="162" r="100" fill="#7ED957" stroke="#2B2D42" stroke-width="6"/>
+  <ellipse cx="108" cy="104" rx="26" ry="14" fill="#FFFFFF" opacity="0.55" transform="rotate(-35 108 104)"/>
+
+  <!-- graduation cap -->
+  <path d="M150 34 L222 58 L150 82 L78 58 Z" fill="#2B2D42"/>
+  <path d="M110 70 L110 92 Q150 108 190 92 L190 70" fill="#3D4060" stroke="#2B2D42" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M206 63 L206 96" stroke="#FFE27A" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="206" cy="100" r="7" fill="#FFE27A" stroke="#2B2D42" stroke-width="3"/>
+
+  <!-- eyes -->
+  <circle cx="118" cy="152" r="23" fill="#FFFFFF" stroke="#2B2D42" stroke-width="5"/>
+  <circle cx="182" cy="152" r="23" fill="#FFFFFF" stroke="#2B2D42" stroke-width="5"/>
+  <circle cx="123" cy="156" r="11" fill="#2B2D42"/>
+  <circle cx="187" cy="156" r="11" fill="#2B2D42"/>
+  <circle cx="127" cy="151" r="4" fill="#FFFFFF"/>
+  <circle cx="191" cy="151" r="4" fill="#FFFFFF"/>
+
+  <!-- cheeks -->
+  <ellipse cx="92" cy="192" rx="15" ry="9" fill="#FF7F6B" opacity="0.65"/>
+  <ellipse cx="208" cy="192" rx="15" ry="9" fill="#FF7F6B" opacity="0.65"/>
+
+  <!-- mouth -->
+  <path d="M120 190 Q150 232 180 190 Q150 202 120 190 Z" fill="#2B2D42" stroke="#2B2D42" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="150" cy="210" rx="13" ry="7" fill="#FF7F6B"/>
+
+  <!-- book -->
+  <g transform="rotate(-12 250 222)">
+    <rect x="222" y="200" width="56" height="42" rx="6" fill="#7CC8FF" stroke="#2B2D42" stroke-width="5"/>
+    <path d="M250 200 L250 242" stroke="#2B2D42" stroke-width="4"/>
+    <text x="236" y="228" font-family="Nunito, sans-serif" font-weight="900" font-size="16" fill="#2B2D42" text-anchor="middle">A</text>
+    <text x="264" y="228" font-family="Nunito, sans-serif" font-weight="900" font-size="16" fill="#2B2D42" text-anchor="middle">B</text>
+  </g>
+</svg>
